@@ -26,5 +26,19 @@ namespace LmycWebSite.Controllers
 
             return View();
         }
+
+        public ActionResult Boat()
+        {
+            ViewBag.Message = "Boat page.";
+
+            return View();
+        }
+
+        public ActionResult UandR()
+        {
+            ViewBag.Message = "UandR page.";
+
+            return View();
+        }
     }
 }
