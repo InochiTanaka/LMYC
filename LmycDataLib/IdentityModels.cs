@@ -29,5 +29,8 @@ namespace LmycWebSite.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Boat> Boats { get; set; }
+
     }
 }
