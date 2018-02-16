@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace LmycDataLib
 {
+<<<<<<< HEAD
     public class Boat
+=======
+    class Boat
+>>>>>>> 67362475ad8795fcdb1105a95eea6d5e4c22018a
     {
         [Key]
         [MaxLength(30)]
@@ -24,7 +28,11 @@ namespace LmycDataLib
         [MaxLength(30)]
         public string Make { get; set; }
 
+<<<<<<< HEAD
         public int Year { get; set; }
+=======
+        public DateTime Year { get; set; }
+>>>>>>> 67362475ad8795fcdb1105a95eea6d5e4c22018a
 
         public DateTime RecordCreationDate { get; set; }
 

@@ -32,5 +32,9 @@ namespace LmycWebSite.Models
         }
 
         public DbSet<Boat> Boats { get; set; }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67362475ad8795fcdb1105a95eea6d5e4c22018a
     }
 }
