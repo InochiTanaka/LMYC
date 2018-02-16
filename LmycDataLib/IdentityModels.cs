@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using LmycDataLib;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -29,5 +30,7 @@ namespace LmycWebSite.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Boat> Boats { get; set; }
     }
 }

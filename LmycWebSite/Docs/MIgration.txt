@@ -1,0 +1,11 @@
+﻿================================ ApplicationDbContext ================================
+
+//Enable-Migrations -EnableAutomaticMigrations -ProjectName LmycDataLib -ContextTypeName IdentityContext -MigrationsDirectory 
+
+Enable-Migrations -EnableAutomaticMigrations -ProjectName LmycDataLib -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations 
+
+//Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory ..\LmycDataLib
+
+Add-Migration -ProjectName LmycDataLib -ConfigurationTypeName LmycDataLib.Migrations.Configuration "InitialMigration"
+
+ Update-Database -ProjectName LmycDataLib -ConfigurationTypeName LmycDataLib.Migrations.Configuration
