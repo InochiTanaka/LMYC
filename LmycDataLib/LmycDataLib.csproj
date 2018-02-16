@@ -95,22 +95,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Boat.cs" />
-    <Compile Include="Data\DummyData.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\201802152100525_InitialMigration.cs" />
-    <Compile Include="Migrations\201802152100525_InitialMigration.Designer.cs">
-      <DependentUpon>201802152100525_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\Boats\201802151848161_InitialCreate.cs" />
+    <Compile Include="Migrations\Boats\201802151848161_InitialCreate.Designer.cs">
+      <DependentUpon>201802151848161_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802152110205_InitialMigration1.cs" />
-    <Compile Include="Migrations\201802152110205_InitialMigration1.Designer.cs">
-      <DependentUpon>201802152110205_InitialMigration1.cs</DependentUpon>
+    <Compile Include="Migrations\Boats\201802152100130_Update.cs" />
+    <Compile Include="Migrations\Boats\201802152100130_Update.Designer.cs">
+      <DependentUpon>201802152100130_Update.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-=======
-    <Compile Include="IdentityModels.cs" />
->>>>>>> 67362475ad8795fcdb1105a95eea6d5e4c22018a
+    <Compile Include="Migrations\Boats\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,11 +113,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201802152100525_InitialMigration.resx">
-      <DependentUpon>201802152100525_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\Boats\201802151848161_InitialCreate.resx">
+      <DependentUpon>201802151848161_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802152110205_InitialMigration1.resx">
-      <DependentUpon>201802152110205_InitialMigration1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\Boats\201802152100130_Update.resx">
+      <DependentUpon>201802152100130_Update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

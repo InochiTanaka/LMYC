@@ -7,7 +7,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using LmycDataLib;
-using LmycWebSite.Models;
 
 namespace LmycWebSite.Controllers
 {
@@ -22,7 +21,7 @@ namespace LmycWebSite.Controllers
         }
 
         // GET: Boats/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -47,7 +46,7 @@ namespace LmycWebSite.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BoatId,BoatName,Picture,LengthInFeet,Make,Year,RecordCreationDate,CreatedBy")] Boat boat)
+        public ActionResult Create([Bind(Include = "BoatId,BoatName,Picture,LengthInFeet,Make,Year,RecordCreationDate")] Boat boat)
         {
             if (ModelState.IsValid)
             {
@@ -60,7 +59,7 @@ namespace LmycWebSite.Controllers
         }
 
         // GET: Boats/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -79,7 +78,7 @@ namespace LmycWebSite.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BoatId,BoatName,Picture,LengthInFeet,Make,Year,RecordCreationDate,CreatedBy")] Boat boat)
+        public ActionResult Edit([Bind(Include = "BoatId,BoatName,Picture,LengthInFeet,Make,Year,RecordCreationDate")] Boat boat)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +90,7 @@ namespace LmycWebSite.Controllers
         }
 
         // GET: Boats/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -108,7 +107,7 @@ namespace LmycWebSite.Controllers
         // POST: Boats/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
             Boat boat = db.Boats.Find(id);
             db.Boats.Remove(boat);

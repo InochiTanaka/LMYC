@@ -202,14 +202,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\LmycWebSite.mdf" />
-    <Content Include="App_Data\LmycWebSite_log.ldf">
-      <DependentUpon>LmycWebSite.mdf</DependentUpon>
+    <Content Include="App_Data\Lmyc.mdf" />
+    <Content Include="App_Data\Lmyc_log.ldf">
+      <DependentUpon>Lmyc.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Docs\MIgration.txt" />
-    <Content Include="Docs\Readme.txt" />
+    <Content Include="Docs\Migrations.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -219,6 +218,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="packages.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -265,16 +265,13 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Register.cshtml" />
-    <Content Include="Views\Home\UandR.cshtml" />
     <Content Include="Views\Boats\Create.cshtml" />
     <Content Include="Views\Boats\Delete.cshtml" />
     <Content Include="Views\Boats\Details.cshtml" />
     <Content Include="Views\Boats\Edit.cshtml" />
     <Content Include="Views\Boats\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
@@ -285,7 +282,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
