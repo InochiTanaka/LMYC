@@ -10,6 +10,8 @@ using LmycDataLib;
 
 namespace LmycWebSite.Controllers
 {
+    //[Authorize(Roles = "Member, Admin")]
+    [Authorize]
     public class BoatsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

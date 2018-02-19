@@ -1,5 +1,6 @@
 namespace LmycDataLib.Migrations.Boats
 {
+    using LmycDataLib.Data;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -11,7 +12,6 @@ namespace LmycDataLib.Migrations.Boats
         {
             AutomaticMigrationsEnabled = false;
             MigrationsDirectory = @"Migrations\Boats";
-            ContextKey = "LmycDataLib.ApplicationDbContext";
         }
 
         protected override void Seed(LmycDataLib.ApplicationDbContext context)
@@ -20,6 +20,11 @@ namespace LmycDataLib.Migrations.Boats
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
+            context.Users.AddOrUpdate(p => p.Id, DummyData.getUser(context).ToArray());
+            context.SaveChanges();
+            context.Boats.AddOrUpdate(c => c.BoatId, DummyData.getBoat(context).ToArray());
+            context.SaveChanges();
         }
     }
 }

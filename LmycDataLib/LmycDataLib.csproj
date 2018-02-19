@@ -96,14 +96,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Boat.cs" />
+    <Compile Include="Data\DummyData.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\Boats\201802151848161_InitialCreate.cs" />
-    <Compile Include="Migrations\Boats\201802151848161_InitialCreate.Designer.cs">
-      <DependentUpon>201802151848161_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\Boats\201802181537148_InitialCreate.cs" />
+    <Compile Include="Migrations\Boats\201802181537148_InitialCreate.Designer.cs">
+      <DependentUpon>201802181537148_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Boats\201802152100130_Update.cs" />
-    <Compile Include="Migrations\Boats\201802152100130_Update.Designer.cs">
-      <DependentUpon>201802152100130_Update.cs</DependentUpon>
+    <Compile Include="Migrations\Boats\201802190337115_InitialCreate1.cs" />
+    <Compile Include="Migrations\Boats\201802190337115_InitialCreate1.Designer.cs">
+      <DependentUpon>201802190337115_InitialCreate1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Boats\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,11 +114,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\Boats\201802151848161_InitialCreate.resx">
-      <DependentUpon>201802151848161_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\Boats\201802181537148_InitialCreate.resx">
+      <DependentUpon>201802181537148_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\Boats\201802152100130_Update.resx">
-      <DependentUpon>201802152100130_Update.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\Boats\201802190337115_InitialCreate1.resx">
+      <DependentUpon>201802190337115_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

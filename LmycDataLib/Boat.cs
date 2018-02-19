@@ -19,8 +19,9 @@ namespace LmycDataLib
         public int Year { get; set; }
         [Display(Name = "Creation Date")]
         public DateTime RecordCreationDate { get; set; }
-        [Display(Name = "Created By")]
         public ApplicationUser CreatedBy { get; set; }
+        [Display(Name = "Created By")]
+        public string CreatedByUser { get; set; }
 
     }
 }

@@ -17,14 +17,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Lower Mainland Yacht Co-op", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Boats", "Index", "Boats")</li>
                     <li>@Html.ActionLink("Contact us", "Contact", "Home")</li>
+
+
+                @if (Session["status"].ToString() != "none")
+                {
+                    <li>@Html.ActionLink("Boats", "Index", "Boats")</li>
+                }
+
+                @if (Session["status"].ToString() == "admin")
+                {
+                    <li>@Html.ActionLink("Users and Roles", "Index", "UsersAndRoles")</li>
+                }
+
+
 
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -35,7 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - LMYC.</p>
         </footer>
     </div>
 
